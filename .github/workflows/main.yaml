@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --local user.email USER_EMAIL # customize as desired
           git config --local user.name USER_NAME # customize as desired
+          git remote set-url origin git://github.com/marcialwushu/threat-model-as-a-code-sample.git
           git config --global credential.useHttpPath true
           git add threagile/output/report.pdf
           git add threagile/output/data-flow-diagram.png
