@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --local user.email USER_EMAIL # customize as desired
           git config --local user.name USER_NAME # customize as desired
+          git config --global credential.useHttpPath true
           git add threagile/output/report.pdf
           git add threagile/output/data-flow-diagram.png
           git commit -m "Update threat model report and data-flow diagram by Threagile" # customize as desired
